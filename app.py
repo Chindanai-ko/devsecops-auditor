@@ -19,7 +19,7 @@ def analyze_config(api_key, content, context_type):
         genai.configure(api_key=api_key)
         
         # เลือก Model (ใช้ gemini-1.5-flash เพื่อความรวดเร็ว หรือ pro เพื่อความละเอียด)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
 
         # สร้าง Prompt แบบละเอียด (System Prompting)
         prompt = f"""
